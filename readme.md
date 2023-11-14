@@ -33,12 +33,12 @@ Before you start using our website, make sure you follow the instructions below:
 
 1. **Clone the repository:**
     ```bash
-    git clone https://github.com/Youcode-Classe-E-2023-2024/Artcode_startup.git
+    [git clone https://github.com/kholoud001/SwiftBooking.git]
     ```
 
 2. **Change to the project directory:**
     ```bash
-    cd Artcode_startup
+    cd SwiftBooking
     ```
 
 3. **Open the `index.html` file in your web browser or deploy it to a web server to access the website.**
@@ -46,7 +46,7 @@ Before you start using our website, make sure you follow the instructions below:
 ## Usage
 To use our website, follow these steps:
 
-1. Visit the [Artcode Startup website](https://youcode-classe-e-2023-2024.github.io/Artcode_startup/).
+1. Visit the [SwiftBooking website](https://youcode-classe-e-2023-2024.github.io/Artcode_startup/).
 
 2. Choose your desired service type, either "Restaurant" or "Event."
 
