@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- this is the link to tailwind framework -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet"/>
+
+    <!-- This for the fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&family=Rubik:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Lavishly+Yours&family=Rubik:ital,wght@1,300&display=swap" rel="stylesheet">
+
+
+    <!-- this is the path to the css file -->
+    <link rel="stylesheet" href="src/style/style.css">
+    <link rel="stylesheet" href="./src/style/index.css">
+    <title>SwiftBooking</title>
+  </head>
+  <body>
+
+    <!-- this is the header section -->
+    <header class="js-index-header">
+    </header>
+    <!-- the end of header section -->
+
+    <!-- background image and description Start -->
+    <section class="bg-image1 container min-h-screen  flex flex-col justify-center items-center">
+      <!-- description -->
+      <div class=" media text-white font text-4xl font-bold	">
+        BOOK AT A COUVERTS HOTSPOT<br>
+        <div class=" media1 font  text-base mb-10	" >
+          2023'S TOP RATED SPOTS & RESTAURANTS, BASED ON OUR USERS REVIEWS <br>
+        </div>
+      </div>
+      <div class="hero">
+        <p class="incorrect"></p>
+        <div class="bg-white shadow-lg p-4 flex space-x-4">
+          <div class="flex space-x-4 ">
+            <!-- City selection -->
+            <div class="relative  ">
+              <label for="city" class="font-medium text-gray-700">
+                <ion-icon name="location-outline" class="mr-2"></ion-icon>City
+              </label>
+              <select id="city" class="appearance-none bg-white hover:border-gray-500 px-4 py-2 pr-8 rounded leading-tight focus:outline-none focus:shadow-outline">
+                <option value="nyc">New York</option>
+                <option value="casa">Atlanta</option>
+                <option value="tangier">Los Angeles</option>
+              </select>
+              <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700 bar-display	">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </div>
+            </div>
+            <!-- Date selection -->
+            <div class="relative display display1 ">
+              <label for="date" class="font-medium text-gray-700">
+                <ion-icon name="calendar" class="mr-2"></ion-icon>Date
+              </label>
+              <input type="date" id="date" class="appearance-none bg-white hover:border-gray-500 px-4 py-2 pr-8 rounded leading-tight focus:outline-none focus:shadow-outline">
+            </div>
+          </div>
+          <div class="flex space-x-4">
+            <!-- Guests selection  -->
+            <div class="relative display display1">
+              <label for="guests" class="font-medium text-gray-700">
+                <ion-icon name="person" class="mr-2"></ion-icon>Guest
+              </label>
+              <input type="number" id="guests" class="w-16 appearance-none bg-white hover:border-gray-500 px-2 py-2 pr-6 rounded leading-tight focus:outline-none focus:shadow-outline" min="1">
+            </div>
+            <!-- Reservation type selection -->
+            <div class="relative display">
+              <label for="reservation-type" class="font-medium text-gray-700">Service</label>
+              <select id="reservation-type" class="appearance-none bg-white  hover:border-gray-500 px-4 py-2 pr-8 rounded leading-tight focus:outline-none focus:shadow-outline">
+                <option value="restaurant">Restaurant</option>
+                <option value="event">Event</option>
+              </select>
+              <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <!-- search -->
+          <button id="filter-button" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
+            <ion-icon name="search-outline" class="mr-2"></ion-icon>Search
+          </button>
+
+        </div>
+      </div>
+    </section>
+    <!-- background image and description End-->
+
+    <!-- this is the main section -->
+    <main>
+      <!-- Caroussel Start -->
+      <div class="container ">
+        <p class=" media text-black  text-center font text-4xl font-bold ">
+          Find Hotspot In Your City<br> <br>
+        </p>
+        <div class="img_slider relative  ">
+          <img src="src/img/Frame1.png" alt="background">
+          <img src="src/img/Frame2.png" alt="background">
+          <img src="src/img/Frame3.png" alt="background">
+        </div>
+      </div>
+      <!-- Caroussel End -->
+
+
+      <!-- Booking Process Start -->
+      <div class="container flex flex-col justify-center items-center ">
+        <p class=" media text-black  text-center font text-4xl font-bold ">
+          Booking Process<br> <br>
+        </p>
+        <div class="process-img ">
+        </div>
+      </div>
+      <!-- Booking Process End -->
+
+
+    </main>
+    <!-- the end of main section -->
+
+    <!-- this is the footer section -->
+    <footer class="bg-footer dark:bg-gray-900 js-index-footer"></footer>
+    <!-- the end of footer section -->
+
+    <script src="src/script/home.js"></script>
+    <script src="src/script/main.js"></script>
+    <script src="src/script/index.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+
+
+  </body>
+</html>

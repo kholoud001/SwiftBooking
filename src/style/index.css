@@ -1,0 +1,51 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    height: 1400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/*********** Home page *********/
+.bg-image1{
+    background-image: url("../img/5c1cb850-fc32-4925-bdb0-4b2babc2c46a.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+.process-img {
+    background-image: url("../img/process.png");
+    background-repeat: no-repeat;
+    background-size:contain;
+    height: 300px;
+    width:600px;
+}
+
+
+/*************** Slider ****************/
+.img_slider img {
+    display: none;
+    width: 100%;
+}
+
+@media (max-width: 595px) {
+    .process-img {
+        background-image: url("../img/process-phone.png");
+        background-repeat: no-repeat;
+        background-size:contain;
+        height: 500px;
+        width:90px;
+    }
+    main {
+        height: 900px;
+    }
+}

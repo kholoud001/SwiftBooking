@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+   <!-- This for the fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&family=Rubik:ital,wght@1,300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Lavishly+Yours&family=Rubik:ital,wght@1,300&display=swap" rel="stylesheet">
+    <!-- this is the link to tailwind framework -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- this is the path to the css file -->
+    <link rel="stylesheet" href="../style/service.css" />
+    <title>SwiftBooking</title>
+
+  </head>
+  <body>
+    <!-- this is the header section -->
+    <header class="js-header"></header>
+    <!-- the end of header section -->
+
+    <!-- this is the main section -->
+    <main class="bar-search">
+      <p class="incorrect"></p>
+      <div class="bg-white shadow-lg p-4 flex space-x-4 md:space-x-0 bar">
+        <div class="flex space-x-4 txt-bar">
+          <div class="relative">
+            <label for="city" class="font-medium text-gray-700">
+              <ion-icon name="location-outline" class="mr-2"></ion-icon>City
+            </label>
+            <select
+              id="city"
+              class="appearance-none bg-white hover:border-gray-500 px-4 py-2 pr-8 rounded leading-tight focus:outline-none focus:shadow-outline"
+            >
+              <option value="nyc">New York</option>
+              <option value="casa">Atlanta</option>
+              <option value="tangier">Los Angeles</option>
+            </select>
+            <div
+              class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700"
+            >
+              <svg
+                class="w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                ></path>
+              </svg>
+            </div>
+          </div>
+          <div class="relative">
+            <label for="date" class="font-medium text-gray-700">
+              <ion-icon name="calendar" class="mr-2"></ion-icon>Date
+            </label>
+            <input
+              type="date"
+              id="date"
+              class="appearance-none bg-white hover:border-gray-500 px-4 py-2 pr-8 rounded leading-tight focus:outline-none focus:shadow-outline"
+            />
+          </div>
+        </div>
+        <div class="flex space-x-4 txt-bar">
+          <div class="relative">
+            <label for="guests" class="font-medium text-gray-700">
+              <ion-icon name="person" class="mr-2"></ion-icon>Guest
+            </label>
+            <input
+              type="number"
+              id="guests"
+              class="w-16 appearance-none bg-white hover:border-gray-500 px-2 py-2 pr-6 rounded leading-tight focus:outline-none focus:shadow-outline"
+              min="1"
+              value="2"
+            />
+          </div>
+          <div class="relative">
+            <label for="reservation-type" class="font-medium text-gray-700"
+              >Service</label
+            >
+            <select
+              id="reservation-type"
+              class="appearance-none bg-white hover:border-gray-500 px-4 py-2 pr-8 rounded leading-tight focus:outline-none focus:shadow-outline"
+            >
+              <option value="restaurant">Restaurant</option>
+              <option value="event">Event</option>
+            </select>
+            <div
+              class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700"
+            >
+              <svg
+                class="w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                ></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <button
+          id="filter-button"
+          class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded search-btn"
+        >
+          <ion-icon name="search-outline" class="mr-2"></ion-icon>Search
+        </button>
+      </div>
+
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-4 js-card"
+      >
+        <!-- Restaurant, or event results will be displayed here -->
+      </div>
+      <div class="flex items-center justify-center mt-8">
+        <ul class="flex space-x-2">
+          <li>
+            <a
+              class="pagination-1 px-3 py-2 bg-gray-200 bg-blue-500 text-white rounded-md pagination"
+              >1</a
+            >
+          </li>
+          <li>
+            <a
+              class="pagination-2 px-3 py-2 bg-gray-200 text-gray-600 rounded-md pagination"
+              >2</a
+            >
+          </li>
+          <!-- Add more page links as needed -->
+        </ul>
+      </div>
+    </main>
+    <!-- the end of main section -->
+
+    <!-- this is the footer section -->
+    <footer class="bg-footer dark:bg-gray-900 js-footer"></footer>
+    <!-- the end of footer section -->
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+    <script src="../script/nav-footer.js"></script>
+    <script src="../script/main.js"></script>
+    <script type="module" src="../script/filter.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    </script>
+  </body>
+</html>

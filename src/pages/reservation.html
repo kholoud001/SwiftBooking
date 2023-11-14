@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- this is the link to tailwind framework -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!-- This for the fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&family=Rubik:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Lavishly+Yours&family=Rubik:ital,wght@1,300&display=swap" rel="stylesheet">
+    <!-- this is the path to the css file -->
+    <link rel="stylesheet" href="../style/reservation.css"/>
+
+    <title>SwiftBooking</title>
+  </head>
+  <body>
+    <!-- this is the header section -->
+    <header class="js-header">
+    </header>
+    <!-- the end of header section -->
+
+    <!-- this is the main section -->
+    <main>
+      <div class="md:container md:mx-auto  flex flex-col " style="margin-top: 8.5rem ;">
+        <p class="font  shadow media  text-black text-2xl font-bold  mx-20" > Complete your reservation <br>
+          <span style="color:#082BCB" class="font media1  text-base font-bold "> We're holding your selection as you complete your reservation.</span>
+        </p>
+      </div>
+      <!-- Form -->
+      <div class="container max-w-fit md:mx-auto my-4 ">
+        <div class="  grid-display grid grid-cols-3 gap-10  lg:mx-20  md:mx-10 ">
+
+          <div class="  border border-blue-400 p-4 col-span-2 ">
+            <p class="font text-lg	font-bold mb-4 " > Your profile <br>
+              <span class="font text-xs font-light" >Please complete your profile </span></p>
+
+            <!-- Form inputs -->
+            <form class="mt-10">
+              <div class="flex justify-around "><!-- first and last name -->
+                <div class="mb-4">
+                  <input type="text" id="first-name" name="first-name" class="w-full border border-black py-3 px-20 font text-xs  sm:text-base"  placeholder="First name" required>
+                  <p><span id="sp-first-name" class="text-red-400 font-bold"></span></p>
+                </div>
+                <div class="mb-4">
+                  <input type="text" id="last-name" name="last-name" class="w-full border border-black py-3 px-20 font text-xs sm:text-base"  placeholder="Last name" required>
+                  <p><span id="sp-last-name" class="text-red-400 font-bold"></span></p>
+                </div>
+              </div>
+              <div class="flex justify-around"><!-- email and phone number -->
+                <div class="mb-4">
+                  <input type="email" id="email" name="email" class="w-full border border-black py-3 px-20 font text-xs sm:text-base"  placeholder="email" required>
+                  <p><span id="sp-email" class="text-red-400  font-bold"></span></p>
+                </div>
+                <div class="mb-4">
+                  <input type="tel" id="phone-number" name="phone-number" class="w-full border border-black py-3 px-20  font text-xs sm:text-base"  placeholder="Phone number" required>
+                  <p><span id="sp-phone" class="text-red-400  font-bold"></span></p>
+                </div>
+              </div>
+
+            </form>
+          </div>
+
+          <!-- Form End-->
+
+          <!-- Reservation confirmation Start -->
+          <div class="  border border-blue-400 p-4 ">
+            <div class="flex flex-col h-fit ">
+              <p class="font text-lg font-bold mb-5 "> Reservation <br>Confirmation</p>
+
+              <div class="container js-cart space-y-2 ">
+                <!-- calendar -->
+                  <div class="flex">
+                    <ion-icon name="calendar-outline"></ion-icon>
+                    <p class="font text-xs font-light ml-2"> Tuesday, November 7, 2023</p>
+                  </div>
+                  <!-- location -->
+                  <div class="flex">
+                    <ion-icon name="location"></ion-icon>
+                    <p class="font text-xs font-light ml-2"> Restaurant, Rabat</p>
+                  </div>
+                  <!-- guests -->
+                  <div class="flex">
+                    <ion-icon name="person-outline"></ion-icon>
+                    <p class="font text-xs font-light ml-2"> 2 guests </p>
+                  </div>
+                  <!-- deposit -->
+                  <div class="flex">
+                    <ion-icon name="cash-outline"></ion-icon>
+                    <p class="font text-xs font-light ml-2"> 70$ deposit per person </p>
+                  </div>
+              </div>
+            </div>
+              <!-- Buttons -->
+            <div class="mt-4 flex 	 justify-evenly  ">
+              <button type="submit" id="confirm" class=" lg:px-3  xl:px-9 md:px-1 px-9 md:text-sm   bg-blue-700 text-white py-2 rounded font font-bold mr-10">Confirm</button>
+              <button type="submit" id="cancel" class="lg:px-3  xl:px-9 md:px-1  px-9 md:text-sm  bg-blue-700 text-white py-2 rounded font font-bold">Cancel </button>
+            </div>
+          </div>
+          <!-- Reservation confirmation  End-->
+
+        </div>
+      </div>
+    </main>
+    <!-- the end of main section -->
+
+    <!-- this is the footer section -->
+    <!-- this is the footer section -->
+    <footer class="bg-footer dark:bg-gray-900 js-footer"></footer>
+    <!-- the end of footer section -->
+
+    <script src="../script/nav-footer.js"></script>
+    <script src="../script/main.js"></script>
+    <script src="../script/reservation.js"></script>
+
+    <!--icons ionic-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  </body>
+</html>
